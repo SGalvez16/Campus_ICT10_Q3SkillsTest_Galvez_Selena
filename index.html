@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Skills Test</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        font-family: Arial, sans-serif;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {
+        color: white;
+        background-color: lightpink;
+        font-size: 15px;
+        margin-bottom: 15px;
+        padding: 5px;
+        border-radius: 15px;
+        text-align: center;
+        margin: 10px
+    }
+
+    .container {
+        max-width: 350px;
+        height: 400px;
+        margin: 70px auto;
+        padding: 0 20px;
+
+    }
+
+    .output {
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="div1">
+            <h1>Create Account</h1>
+            <form>
+                <input type="username" id="input1" placeholder="Enter your username"><br>
+                <input type="password" id="input2" placeholder="Enter your password"><br>
+            </form>
+            <div id="output"></div>
+        </div>
+        <input type="button" py-click="password_authenticator" value="Sign up">
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
